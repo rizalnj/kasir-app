@@ -88,7 +88,7 @@ export default class Home extends Component {
                 text: "Pesanan " + keranjang.product.nama,
                 icon: "success",
                 button: false,
-                timer: 2000,
+                timer: 1500,
               });
             })
             .catch((error) => {
@@ -108,7 +108,7 @@ export default class Home extends Component {
                 text: "Pesanan " + keranjang.product.nama,
                 icon: "success",
                 button: false,
-                timer: 2000,
+                timer: 1500,
               });
             })
             .catch((error) => {
@@ -147,7 +147,7 @@ export default class Home extends Component {
                   ))}
               </Row>
             </Col>
-            <Detail keranjangs={keranjangs} />
+            <Detail keranjangs={keranjangs} {...this.props} />
           </Row>
         </Container>
       </div>
